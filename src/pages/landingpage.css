@@ -1,0 +1,36 @@
+body{
+  overflow-x:hidden;  
+  /* prevent horizontal scrolling */
+}
+#bg1{
+    background-image: url('https://sopwritingonline.com/wp-content/uploads/2023/08/20230816120304_fpdl.in_resume-application-employment-form-concept_53876-125147_medium-1.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    width:100%;
+    height: 450px;
+}
+
+
+/* appliying medaqueries */
+@media (max-width:768px) {
+    .row{
+        flex-direction: column ;  
+        /* stacks col vertically */
+    }
+
+    .col-4,.col-6,.col-3{
+         width: 100%;  /* full width for mobil*/
+        margin-bottom: 20px; /*space between stacked elements*/
+    }
+    img{
+         width: 100%; 
+         height: auto; /*maintain aspect ratio*/
+    }
+    .box{
+        padding: 20px;/*adjust padding for smaller screens */
+    }
+    h3,h4{
+        font-size: 1.5em;/*Adjust fontsizee for heading*/
+    }
+}
